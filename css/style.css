@@ -44,6 +44,7 @@ body {
 }
 
 .section {
+  padding: 100px; /* 헤더 공간 남겨주는 겸 겸사겸사 */
 }
 
 .section h2 {
@@ -60,4 +61,38 @@ body {
   transform: translateY(-50%);
   right: 5%;
   z-index: 99;
+}
+#myMenu li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  margin: 20px 0;
+  position: relative;
+}
+#myMenu li a {
+  display: block;
+  height: 100%;
+}
+#myMenu li a b {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -57px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 30px;
+  width: 160px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.4s;
+}
+/* 활성화 표시 */
+#myMenu li.active {
+  background: #f39;
+}
+#myMenu li.active a b {
+  opacity: 1;
+  right: -7px;
 }
