@@ -11,6 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -26,23 +28,31 @@
     <script src="./js/script.js"></script>
   </head>
   <body>
+    <!-- 인디케이터 -->
+    <ul id="myMenu">
+      <li data-menuanchor="sec1" class="active"><a href="#sec1">First section</a></li>
+      <li data-menuanchor="sec2"><a href="#sec2">Second section</a></li>
+      <li data-menuanchor="sec3"><a href="#sec3">Third section</a></li>
+      <li data-menuanchor="sec4"><a href="#sec4">Fourth section</a></li>
+    </ul>
+
     <header id="header"></header>
 
     <!-- 부모의 이름은 id="fullpage", 자식은 class="section" -->
     <main id="fullpage">
-      <section class="section">
+      <section class="section sec1">
         <h2>SECTION 1</h2>
         <p>첫번째 섹션입니다.</p>
       </section>
-      <section class="section">
+      <section class="section sec2">
         <h2>SECTION 2</h2>
         <p>두번째 섹션입니다.</p>
       </section>
-      <section class="section">
+      <section class="section sec3">
         <h2>SECTION 3</h2>
         <p>세번째 섹션입니다.</p>
       </section>
-      <section class="section">
+      <section class="section sec4">
         <h2>SECTION 4</h2>
         <p>네번째 섹션입니다.</p>
       </section>
