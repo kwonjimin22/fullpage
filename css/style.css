@@ -96,3 +96,26 @@ body {
   opacity: 1;
   right: -7px;
 }
+
+/* go Top */
+.btn-top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 70px;
+  height: 70px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+.btns button {
+  padding: 10px;
+}
