@@ -22,6 +22,9 @@ $(function () {
     // 영역 콘텐츠의 세로 정렬
     verticalCentered: false,
 
+    // 스크롤바 생성되게
+    scrollBar: true,
+
     // 영역에 로딩이 되고 나서
     afterLoad: function (anchorLink, index) {
       var loadedSection = $(this);
@@ -29,6 +32,13 @@ $(function () {
 
       if (anchorLink === 'sec4') {
         $btnTop.fadeIn();
+      }
+
+      // 두번째 영역에서는 자동 스크롤 취소
+      if (anchorLink === 'sec2') {
+        $.fn.fullpage.setAutoScrolling(false);
+      } else {
+        $.fn.fullpage.setAutoScrolling(true);
       }
     },
 
