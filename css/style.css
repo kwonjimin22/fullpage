@@ -30,6 +30,19 @@ body {
   top: -70px;
 }
 
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+}
+
 #footer {
   height: 100px;
   background: #333;
